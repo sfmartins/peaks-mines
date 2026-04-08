@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="fireworks"></div>
+    <div id="bob"></div>
+    <div id="audrey"></div>
+    <div id="newRecordModal" class="modal">
+        <div class="modal-content">
+            <h2 id="newRecordMessage">New Record!</h2>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Sam's Minesweeper</h1>
+        
+        <button id="newGame">New Game</button>
+        
+        <div class="stats">
+            <div class="stat">
+                <label>Mines</label>
+                <span id="mineCount">30</span>
+            </div>
+            <div class="stat">
+                <label>Flags</label>
+                <span id="flagCount">0</span>
+            </div>
+            <div class="stat">
+                <label>Time</label>
+                <span id="timer">0s</span>
+            </div>
+        </div>
+
+        <div id="board" class="board"></div>
+
+        <div id="bestScores" class="best-scores"></div>
+        
+        <div class="controls">
+            <select id="difficulty">
+                <option value="beginning">Beginner</option>
+                <option value="intermediate" selected>Intermediate</option>
+                <option value="expert">Expert</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
